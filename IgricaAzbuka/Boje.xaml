@@ -16,6 +16,7 @@
                        Text="Izmena fajla da vidimo kako ce proci push request!" 
                        FontSize="36" 
                        RelativePanel.Below="TestTextBlock"/>
+            <Rectangle Name="ResRectangle" Background="Red" Width="100" Height="200" RelativePanel.Below="VSTextTextBlock" />
         </RelativePanel>
         
 
