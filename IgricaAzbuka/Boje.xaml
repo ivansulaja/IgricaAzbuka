@@ -11,12 +11,19 @@
         <RelativePanel>
             <TextBlock Name="TestTextBlock" 
                        Text="Test" 
-                       FontSize="72" />
+                       FontSize="72" Margin="20" />
             <TextBlock Name="VSTestTextBlock" 
                        Text="Izmena fajla da vidimo kako ce proci push request!" 
                        FontSize="36" 
-                       RelativePanel.Below="TestTextBlock"/>
-            <Rectangle Name="ResRectangle" Background="Red" Width="100" Height="200" RelativePanel.Below="VSTextTextBlock" />
+                       RelativePanel.Below="TestTextBlock"
+                       Margin="20,10,10,10"/>
+            <Rectangle Name="ResRectangle" 
+                       Fill="BlanchedAlmond" 
+                       Width="100" 
+                       Height="200" 
+                       RelativePanel.Below="VSTestTextBlock" 
+                       RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                       Margin="20"/>
         </RelativePanel>
         
 
