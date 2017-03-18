@@ -29,15 +29,17 @@
                        RelativePanel.AlignHorizontalCenterWithPanel="True" 
                        Margin="20"/>
         </RelativePanel>
-        <GridView>
-            <GridView.Items Name="SlikeGridView" ItemsSource="">
-                <DataType Source="{data: Slika}">
-                    <Item>
-                    </Item>    
-                </DataType>    
-            </GridView.Items>
+        <GridView ItemsSource="x:Bind Slike">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:Slika">
+                    
+                        
+                </DataTemplate>    
+            </GridView.ItemTemplate>
         </GridView>
+
         
+
 
     </Grid>
 </Page>
