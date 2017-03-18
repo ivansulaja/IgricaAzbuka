@@ -8,6 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
         <RelativePanel>
             <TextBlock Name="TestTextBlock" 
                        Text="Test" 
@@ -25,6 +29,14 @@
                        RelativePanel.AlignHorizontalCenterWithPanel="True" 
                        Margin="20"/>
         </RelativePanel>
+        <GridView>
+            <GridView.Items Name="SlikeGridView" ItemsSource="">
+                <DataType Source="{data: Slika}">
+                    <Item>
+                    </Item>    
+                </DataType>    
+            </GridView.Items>
+        </GridView>
         
 
     </Grid>
