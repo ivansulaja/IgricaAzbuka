@@ -24,14 +24,15 @@
             <Rectangle Name="ResRectangle" 
                        Fill="BlanchedAlmond" 
                        Width="100" 
-                       Height="200" 
+                       Height="50" 
                        RelativePanel.Below="VSTestTextBlock" 
                        RelativePanel.AlignHorizontalCenterWithPanel="True" 
                        Margin="20"/>
         </RelativePanel>
-        
-         
-        
+        <Button Grid.Row="1" Name="MyButton" Width="50" Height="20"/>
+
+
+
 
     </Grid>
 </Page>
