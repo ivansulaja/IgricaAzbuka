@@ -29,17 +29,19 @@
                        RelativePanel.AlignHorizontalCenterWithPanel="True" 
                        Margin="20"/>
         </RelativePanel>
-        <GridView ItemsSource="x:Bind Slike">
+        
+         <GridView Name="AzbukaGridView" 
+                      ItemsSource="{x:Bind Slova}"
+                      SelectionMode="None"
+                      IsItemClickEnabled="True"
+                      ItemClick="AzbukaGridView_ItemClick">
             <GridView.ItemTemplate>
-                <DataTemplate x:DataType="data:Slika">
-                    
-                        
-                </DataTemplate>    
+                <DataTemplate x:DataType="data:Slovo">
+                    <local:SlovoTemplate VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+                </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-
         
-
 
     </Grid>
 </Page>
